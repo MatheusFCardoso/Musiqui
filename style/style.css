@@ -177,6 +177,19 @@ main > #playlist{
     
 }
 
+main > #playlist > .music > .sLetra{
+    text-decoration: none;
+    color: white;
+    display: none;
+    margin-left: 10px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+main > #playlist > .music > .sLetra:hover{
+    color: #68b2f8;
+}
+
 main > #playlist > h1{
     font-size: 1.2em;
     color: white;
@@ -228,17 +241,94 @@ main > #playlist > .music > audio{
     display: none;
 }
 
+main{
+    margin-top: 50px;
+}
+
 main > #playlist > .music:hover{
     display: block;
-    height: 70px;
+    height: 90px;
     
 }
 
 main > #playlist > .music:hover audio{
     display: block;
+}
+
+main > #playlist > .music:hover .sLetra{
+    display: block;
+}
+
+main > .playerLetra > img{
+    width: 200px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+
+main > .playerLetra > .dados{
+    display: inline-block;
+    color: white;
     
 }
 
+main > .playerLetra > .dados > ul{
+    display: block;
+    position: absolute;
+    top: 247px;
+    margin-left: 15px;
+}
+
+main > .playerLetra > audio{
+    height: 30px;
+    
+
+}
+
+main > .playerLetra > audio::-webkit-media-controls-current-time-display{
+    display: block;
+    
+}
+
+main > .playerLetra > audio::-webkit-media-controls-time-remaining-display{
+    display: block;
+    padding-right: 10px;
+    
+}
+
+main > .playerLetra{
+    width: 700px;
+    margin: auto;
+    background-color: var(--color4);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+main > .letraBox > .letra > p{
+    font-size: 16px;
+    color: black;
+    margin: 15px;
+    font-weight: 600;
+}
+
+main > .letraBox > .letra {
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+main > .letraBox {
+    width: 700px;
+    background-color: var(--color4);
+    margin: 25px auto 70px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 audio{
    width: 100%;
