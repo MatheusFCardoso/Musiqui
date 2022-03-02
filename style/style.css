@@ -177,6 +177,11 @@ main > #playlist{
     
 }
 
+main > #playlist > h1{
+    font-size: 1.2em;
+    color: white;
+}
+
 .icon{
     display: inline-block;
     width: 20px;
