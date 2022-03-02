@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root{
+    --color1: #68b2f8 ;
+    --color2: #506ee5 ;
+    --color3: #7037cd ;
+    --color4: #651f71 ;
+    --color5: #1d0c20 ;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, ul, li, p{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+header{
+    background-color: #651f71;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navg{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: all 0.7s;
+    font-weight: bold;
+}
+
+.navg:hover{
+    background-image: linear-gradient(to bottom, white, turquoise, steelblue); 
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.logo{
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.2em;
+    text-decoration: none;
+    font-family: 'Fredoka One';
+}
+
+.logo:hover{
+    background-image: linear-gradient(to bottom, white, turquoise, steelblue);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.2em;
+    text-decoration: none;
+    font-family: 'Fredoka One';
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    margin-left: 10px;
+}
+
+ul li a{
+    display: block;
+    padding: 10px;
+    
+}
+
+body{background-color: var(--color5);}
+
+section{
+    margin: auto;
+    position: relative;
+    height: 850px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.swiper{
+    width: 1300px;
+}
+
+.card{
+    position: relative;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+section .card .image{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    border-radius:  30px 30px 0 0;
+    opacity: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+section .card .image{
+    opacity: 80%;
+    transition: all 0.4s;
+}
+
+section .card .image:hover{
+    transform: scale(1.07);
+    opacity: 100%;
+    transition: all 0.4s;
+}
+
+.swiper-pagination{
+    position: absolute;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    transform: scale(1.07);
+    opacity: 1;
+    color: white;
+}
+
+.player{
+    margin-top: -5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:  0 0 30px 30px;
+    background-color: var(--color1);
+}
+
+.player > audio{
+    border-radius:  0 0 30px 30px;
+    background-color: var(--color1);
+    padding: 0px;
+}
+
+main > #playlist{
+    width: 900px;
+    margin: 40px auto 100px auto;
+    background-color: var(--color4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    padding: 20px;
+    
+    
+}
+
+.icon{
+    display: inline-block;
+    width: 20px;
+    margin: 0px auto 0px auto;
+}
+
+.youtube{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 5px ;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.youtube:hover{
+    color: #68b2f8;
+}
+
+main > #playlist > .music > audio::-webkit-media-controls-panel{
+    background-color: #972daa;
+}
+
+main > #playlist > .music{
+    background-color: #972daa;
+    margin:  15px 0 15px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 30px;
+    transition: height 0.5s;
+    padding: 5px;
+    
+}
+
+main > #playlist > .music > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+main > #playlist > .music > audio{
+    padding: 5px 5px 5px 5px;
+    height: 30px;
+    display: none;
+}
+
+main > #playlist > .music:hover{
+    display: block;
+    height: 70px;
+    
+}
+
+main > #playlist > .music:hover audio{
+    display: block;
+    
+}
+
+
+audio{
+   width: 100%;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--color1);
+}
+
+audio::-webkit-media-controls-timeline{
+    width: 70px;
+    padding: 0px;
+}
+
+audio::-webkit-media-controls-toggle-closed-captions-button{
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display{
+    display: none;
+}
+
+audio::-webkit-media-controls-current-time-display{
+    display: none;
+}
